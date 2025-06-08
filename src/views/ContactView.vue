@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-5 bg-dark text-light">
+  <div class="section container py-5 text-light">
     <h2 class="mb-4 text-info" data-aos="fade-up">Contact Me</h2>
 
     <!-- Alert Message -->
@@ -61,6 +61,15 @@
         🐙 GitHub:
         <a href="https://github.com/a7mdadel" target="_blank" class="text-info"
           >github.com/a7mdadel</a
+        >
+      </p>
+      <p>
+        🌐 LinkedIn:
+        <a
+          href="https://www.linkedin.com/in/ahmed-elbahy-b67a00210/"
+          target="_blank"
+          class="text-info"
+          >linkedin.com/in/a7mdadel</a
         >
       </p>
     </div>

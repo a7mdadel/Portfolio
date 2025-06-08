@@ -31,14 +31,16 @@
       <div class="mt-5" data-aos="fade-up">
         <h2 class="text-info mb-4">My Skills</h2>
         <div
-          class="d-flex flex-column align-items-center flex-md-row flex-wrap gap-2"
+          class="d-flex align-items-center justify-content-center flex-wrap gap-2"
         >
           <span class="badge">Vue 3</span>
           <span class="badge">Composition API</span>
+          <span class="badge">Pinia</span>
+          <span class="badge">Vuex</span>
           <span class="badge">JavaScript</span>
           <span class="badge">Bootstrap</span>
-          <span class="badge">HTML5</span>
-          <span class="badge">CSS3</span>
+          <span class="badge"> Html & HTML5</span>
+          <span class="badge">Css & CSS3</span>
           <span class="badge">Git & GitHub</span>
           <span class="badge">Responsive Design</span>
         </div>
@@ -50,6 +52,7 @@
 <script setup>
 import { onMounted } from "vue";
 import Typed from "typed.js";
+import AOS from "aos";
 
 onMounted(() => {
   const options = {
@@ -61,9 +64,15 @@ onMounted(() => {
   };
 
   new Typed(".typed-text", options);
+
+  // AOS Animation
+  AOS.init();
 });
 </script>
 <style scoped>
+section {
+  background-image: linear-gradient(to right, #000 40%, #69ccdaab);
+}
 .typed-text {
   font-family: Sansita Swashed;
   letter-spacing: 2px;

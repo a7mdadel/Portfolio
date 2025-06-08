@@ -1,10 +1,10 @@
 // views/ProjectsView.vue
 <template>
-  <div class="container py-5 bg-dark text-light">
+  <div class="section container py-5 px-5 text-light">
     <h2 class="mb-4 text-info" data-aos="fade-right">My Projects</h2>
     <div class="row">
       <div
-        class="col-md-6 mb-4"
+        class="mb-4"
         v-for="project in projects"
         :key="project.title"
         data-aos="zoom-in"
@@ -72,7 +72,7 @@ const projects = ref([
   {
     title: "Khamsat Clone",
     description:
-      "A frontend clone of the Khamsat freelancing platform, built using Vue 3 and Bootstrap. The project replicates key UI sections including the services list, categories, header, and user cards. It demonstrates precision in layout replication and responsive design techniques, focusing on real-world UI practice.",
+      "A frontend clone of the Khamsat freelancing platform, built using html and css. The project replicates key UI sections including the services list, categories, header, and user cards. It demonstrates precision in layout replication and responsive design techniques, focusing on real-world UI practice.",
     tech: ["Html", "Css"],
     github: "https://github.com/a7mdadel/5msat.git",
     live: "https://a7mdadel.github.io/5msat/",

@@ -1,8 +1,10 @@
 // App.vue
 <template>
-  <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top py-4">
+  <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top py-2">
     <div class="container">
-      <router-link class="navbar-brand fs-2" to="/">My Portfolio</router-link>
+      <router-link class="navbar-brand fs-2" to="/">
+        <i class="fa-solid fa-user-tie"></i> My Portfolio</router-link
+      >
       <button
         class="navbar-toggler text-info shadow-none"
         type="button"
