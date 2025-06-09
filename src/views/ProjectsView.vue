@@ -74,8 +74,8 @@ const projects = ref([
     description:
       "A responsive e-commerce frontend application developed using Vue 3, Bootstrap 5, and Pinia. The app allows users to browse products, add them to cart, and navigate through different categories. It features clean UI, dynamic components, and real-time cart updates with Pinia for state management.",
     tech: ["Vue 3", "Bootstrap 5", "Pinia"],
-    github: "https://github.com/a7mdadel/vue-todo-app.git",
-    live: "https://a7mdadel.github.io/vue-todo-app/",
+    github: "https://github.com/a7mdadel/shopping",
+    live: "https://storied-lamington-f72877.netlify.app/",
   },
   {
     title: "Khamsat-Clone",
