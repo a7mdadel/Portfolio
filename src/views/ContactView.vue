@@ -74,16 +74,17 @@
           LinkedIn
         </a>
       </p>
-      <p class="mt-5 fs-4 p-3 rounded fit-width">
-        <i class="fa-solid fa-file"></i> My CV :
-        <a href="/Ahmed-cv-2025.pdf" target="_blank" class="text-info ms-3 p-2"
-          ><button class="btn btn-outline-info fs-4">View</button></a
+      <p class="mt-5 fs-4 rounded">
+        <i class="fa-solid fa-file"></i>
+        My CV :
+        <a href="/Ahmed-cv-2025.pdf" target="_blank" class="text-info ms-3"
+          ><button class="btn btn-outline-info">View</button></a
         >
         <a
           href="/Ahmed-cv-2025.pdf"
           download="/Ahmed-cv-2025.pdf"
           class="text-info ms-3"
-          ><button class="btn btn-outline-info fs-4">Download</button></a
+          ><button class="btn btn-outline-info">Download</button></a
         >
       </p>
     </div>
@@ -147,11 +148,3 @@ const sendEmail = async () => {
   }
 };
 </script>
-<style scoped>
-.fit-width {
-  width: fit-content;
-  margin: 0 auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 1.9);
-  background-image: linear-gradient(to left, #000, #6fd9e7ab);
-}
-</style>

@@ -48,7 +48,7 @@ const projects = ref([
   {
     title: "cake-shop",
     description:
-      "A modern cake shop website designed with Vue 3 and Bootstrap. It features product categories (e.g., birthday cakes, cupcakes, specials), scroll-based navigation with ScrollSpy, and smooth UI transitions. The layout is responsive and supports dark mode for an elegant browsing experience.",
+      "Modern responsive cake shop with product categories, ScrollSpy navigation, dark mode, and smooth transitions.",
     tech: ["Vue 3", "Bootstrap 5"],
     github: "https://github.com/a7mdadel/cake-shop-vue.git",
     live: "https://boisterous-kataifi-622c48.netlify.app",
@@ -56,7 +56,7 @@ const projects = ref([
   {
     title: "Tiger-Bite",
     description:
-      "A responsive UI clone of the Tiger Bite website created with Vue 3 and Bootstrap. The project replicates the original layout, animations, and navigation behavior, focusing on pixel-perfect design and interactivity. It demonstrates proficiency in component-based development and modern UI implementation.",
+      "Pixel-perfect UI clone with animations and responsive layout showcasing advanced component-based design.",
     tech: ["Vue 3", "Bootstrap 5"],
     github: "https://github.com/a7mdadel/Tiger-Bite.git",
     live: "https://superb-daifuku-dff2d9.netlify.app",
@@ -64,7 +64,7 @@ const projects = ref([
   {
     title: "todo-app",
     description:
-      "A clean and responsive To-Do list application built with Vue 3 and Bootstrap. It allows users to add, edit, delete, and mark tasks as completed. The project showcases reactive state management using Composition API, with a smooth and intuitive user interface.",
+      "Simple and clean to-do list app with add/edit/delete features and reactive state using Composition API.",
     tech: ["Vue 3", "Bootstrap 5"],
     github: "https://github.com/a7mdadel/vue-todo-app.git",
     live: "https://a7mdadel.github.io/vue-todo-app/",
@@ -72,7 +72,7 @@ const projects = ref([
   {
     title: "shopping-cart",
     description:
-      "A responsive e-commerce frontend application developed using Vue 3, Bootstrap 5, and Pinia. The app allows users to browse products, add them to cart, and navigate through different categories. It features clean UI, dynamic components, and real-time cart updates with Pinia for state management.",
+      "E-commerce frontend with real-time cart updates, product filtering, and state management using Pinia.",
     tech: ["Vue 3", "Bootstrap 5", "Pinia"],
     github: "https://github.com/a7mdadel/shopping",
     live: "https://storied-lamington-f72877.netlify.app/",
@@ -80,7 +80,7 @@ const projects = ref([
   {
     title: "Khamsat-Clone",
     description:
-      "A frontend clone of the Khamsat freelancing platform, built using html and css. The project replicates key UI sections including the services list, categories, header, and user cards. It demonstrates precision in layout replication and responsive design techniques, focusing on real-world UI practice.",
+      "Responsive UI clone of Khamsat platform showcasing layout precision and real-world CSS skills.",
     tech: ["Html", "Css"],
     github: "https://github.com/a7mdadel/5msat.git",
     live: "https://a7mdadel.github.io/5msat/",
@@ -91,6 +91,6 @@ const projects = ref([
 .card {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 1.9);
   background-color: #eeeeee;
-  border-radius: 50px;
+  border-radius: 20px;
 }
 </style>
