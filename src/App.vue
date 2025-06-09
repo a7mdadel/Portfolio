@@ -25,12 +25,12 @@
             >
           </li>
           <li class="nav-item">
-            <router-link class="nav-link fs-2 text-light" to="/projects"
+            <router-link class="nav-link fs-2 text-light ms-md-5" to="/projects"
               >Projects</router-link
             >
           </li>
           <li class="nav-item">
-            <router-link class="nav-link fs-2 text-light" to="/contact"
+            <router-link class="nav-link fs-2 text-light ms-md-5" to="/contact"
               >Contact</router-link
             >
           </li>
@@ -59,6 +59,9 @@
   transition: all 0.5s ease-in-out;
 }
 .nav-link:hover {
+  color: #00eeff !important;
+}
+.navbar-toggler-icon {
   color: #00eeff !important;
 }
 </style>
