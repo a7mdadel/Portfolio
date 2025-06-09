@@ -1,5 +1,5 @@
 <template>
-  <div class="section container py-5 text-light">
+  <div class="section container py-5 px-5 text-light">
     <h2 class="mb-4 text-info" data-aos="fade-up">Contact Me</h2>
 
     <!-- Alert Message -->
@@ -7,7 +7,7 @@
       {{ alertMessage }}
     </div>
 
-    <form @submit.prevent="sendEmail" class="bg-secondary p-4 rounded">
+    <form @submit.prevent="sendEmail" class="p-4 rounded border">
       <div class="mb-3">
         <label for="name" class="form-label">Name</label>
         <input
@@ -46,30 +46,47 @@
       </button>
     </form>
 
-    <div class="mt-4">
-      <h5>Or contact me directly:</h5>
+    <div class="mt-4 fs-4">
+      <h5 class="mb-4 mt-5 fs-2 text-info">Or contact me directly:</h5>
       <p>
-        📞 Phone: <a href="tel:01154579000" class="text-info">01154579000</a>
+        <i class="fa-solid fa-phone"></i> :
+        <a href="tel:01154579000" class="text-info">01154579000</a>
       </p>
       <p>
-        💬 WhatsApp:
-        <a href="https://wa.me/201154579000" target="_blank" class="text-info"
-          >Chat on WhatsApp</a
-        >
+        <i class="fa-brands fa-whatsapp"></i> :
+        <a href="https://wa.me/201154579000" target="_blank" class="text-info">
+          WhatsAppp
+        </a>
       </p>
       <p>
-        🐙 GitHub:
-        <a href="https://github.com/a7mdadel" target="_blank" class="text-info"
-          >github.com/a7mdadel</a
-        >
+        <i class="fa-brands fa-github"></i> :
+        <a href="https://github.com/a7mdadel" target="_blank" class="text-info">
+          GitHub
+        </a>
       </p>
       <p>
-        🌐 LinkedIn:
+        <i class="fa-brands fa-linkedin"></i> :
         <a
           href="https://www.linkedin.com/in/ahmed-elbahy-b67a00210/"
           target="_blank"
           class="text-info"
-          >linkedin.com/in/a7mdadel</a
+        >
+          LinkedIn
+        </a>
+      </p>
+      <p class="mt-5 fs-4 p-3 rounded fit-width">
+        <i class="fa-solid fa-file"></i> My CV :
+        <a
+          href="./Ahmed-Adel-cv-.pdf"
+          target="_blank"
+          class="text-info ms-3 p-2"
+          ><button class="btn btn-outline-info fs-4">View</button></a
+        >
+        <a
+          href="/Ahmed-Adel-cv-.pdf"
+          download="/Ahmed-Adel-cv-.pdf"
+          class="text-info ms-3"
+          ><button class="btn btn-outline-info fs-4">Download</button></a
         >
       </p>
     </div>
@@ -133,3 +150,11 @@ const sendEmail = async () => {
   }
 };
 </script>
+<style scoped>
+.fit-width {
+  width: fit-content;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 1.9);
+  background-image: linear-gradient(to left, #000, #6fd9e7ab);
+}
+</style>

@@ -1,6 +1,6 @@
 // App.vue
 <template>
-  <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top py-2">
+  <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top py-1">
     <div class="container">
       <router-link class="navbar-brand fs-2" to="/">
         <i class="fa-solid fa-user-tie"></i> My Portfolio</router-link
@@ -17,19 +17,24 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div
-        class="collapse navbar-collapse justify-content-end py-2 py-md-0"
-        id="navbarNav"
-      >
-        <router-link class="nav-link d-inline me-md-5 px-2 fs-2" to="/"
-          >Home</router-link
-        >
-        <router-link class="nav-link d-inline me-md-5 px-2 fs-2" to="/projects"
-          >Projects</router-link
-        >
-        <router-link class="nav-link d-inline me-md-5 px-2 fs-2" to="/contact"
-          >Contact</router-link
-        >
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav py-3">
+          <li class="nav-item">
+            <router-link class="nav-link fs-2 text-light" to="/"
+              >Home</router-link
+            >
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link fs-2 text-light" to="/projects"
+              >Projects</router-link
+            >
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link fs-2 text-light" to="/contact"
+              >Contact</router-link
+            >
+          </li>
+        </ul>
       </div>
     </div>
   </nav>

@@ -33,14 +33,16 @@
         <div
           class="d-flex align-items-center justify-content-center flex-wrap gap-2"
         >
-          <span class="badge">Vue 3</span>
+          <span class="badge">VUE 3</span>
           <span class="badge">Composition API</span>
+          <span class="badge">Option API</span>
+          <span class="badge">Vue Router</span>
           <span class="badge">Pinia</span>
           <span class="badge">Vuex</span>
           <span class="badge">JavaScript</span>
-          <span class="badge">Bootstrap</span>
-          <span class="badge"> Html & HTML5</span>
-          <span class="badge">Css & CSS3</span>
+          <span class="badge">Bootstrap 5</span>
+          <span class="badge"> HTML & HTML5</span>
+          <span class="badge">CSS & CSS3</span>
           <span class="badge">Git & GitHub</span>
           <span class="badge">Responsive Design</span>
         </div>

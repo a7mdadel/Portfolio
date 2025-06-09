@@ -9,7 +9,7 @@
         :key="project.title"
         data-aos="zoom-in"
       >
-        <div class="card bg-secondary text-white-50 h-100">
+        <div class="card text-black h-100">
           <div class="card-body">
             <h5 class="card-title fs-2">{{ project.title }}</h5>
             <p class="card-text fs-5 text-dark-50">
@@ -17,15 +17,15 @@
             </p>
             <div class="mb-4 d-flex flex-wrap justify-content-center gap-3">
               <span
-                class="badge bg-secondary border text-dark p-3 fs-5 me-2"
+                class="text-dark p-1 fs-5 me-2"
                 v-for="t in project.tech"
                 :key="t"
-                >{{ t }}</span
+                >({{ t }})</span
               >
             </div>
             <a
               :href="project.live"
-              class="btn btn-outline-light btn-sm me-2 fs-4"
+              class="btn btn-outline-info btn-sm me-2 fs-4"
               target="_blank"
               >Live</a
             >
@@ -80,7 +80,8 @@ const projects = ref([
 ]);
 </script>
 <style scoped>
-.card-title {
-  color: #00eeff !important;
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 1.9);
+  background-color: #eeeeee;
 }
 </style>
