@@ -2,7 +2,7 @@
 <template>
   <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top py-1">
     <div class="container">
-      <router-link class="navbar-brand fs-2" to="/">
+      <router-link class="navbar-brand fs-4" to="/">
         <i class="fa-solid fa-user-tie"></i> My Portfolio</router-link
       >
       <button
@@ -20,17 +20,17 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav py-3">
           <li class="nav-item">
-            <router-link class="nav-link fs-2 text-light" to="/"
+            <router-link class="nav-link fs-4 text-light" to="/"
               >Home</router-link
             >
           </li>
           <li class="nav-item">
-            <router-link class="nav-link fs-2 text-light ms-md-5" to="/projects"
+            <router-link class="nav-link fs-4 text-light ms-md-5" to="/projects"
               >Projects</router-link
             >
           </li>
           <li class="nav-item">
-            <router-link class="nav-link fs-2 text-light ms-md-5" to="/contact"
+            <router-link class="nav-link fs-4 text-light ms-md-5" to="/contact"
               >Contact</router-link
             >
           </li>

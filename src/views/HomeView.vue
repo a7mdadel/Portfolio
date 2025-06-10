@@ -2,10 +2,13 @@
 <template>
   <section class="min-vh-100 bg-dark text-light d-flex align-items-center">
     <div class="container py-5 mt-5">
-      <div class="row align-items-center">
+      <div
+        class="row align-items-center d-flex flex-column-reverse flex-md-row"
+      >
         <div class="col-md-6 text-center text-md-start" data-aos="fade-right">
           <h1 class="display-2 fw-bold">
-            Hi, I'm <span class="text-info">Ahmed El bahy</span>
+            Hi, <br />
+            I'm <span class="text-info">Ahmed El bahy</span>
           </h1>
           <p class="lead my-4 fs-3">
             Frontend developer using Vue 3 and Bootstrap to create responsive
@@ -22,14 +25,14 @@
           <img
             src="../assets/profile.png"
             alt="Profile"
-            class="img-fluid rounded-circle shadow-lg"
-            style="max-width: 350px"
+            class="rounded-circle shadow-lg mb-5"
+            style="max-width: 300px"
           />
         </div>
       </div>
 
       <div class="mt-5" data-aos="fade-up">
-        <h2 class="text-info mb-4">My Skills</h2>
+        <h2 class="text-info mb-5">My Skills</h2>
         <div
           class="d-flex align-items-center justify-content-center flex-wrap gap-2"
         >

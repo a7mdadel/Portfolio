@@ -77,12 +77,12 @@
       <p class="mt-5 fs-4 rounded">
         <i class="fa-solid fa-file"></i>
         My CV :
-        <a href="/Ahmed-cv-2025.pdf" target="_blank" class="text-info ms-3"
+        <a href="/Ahmed-Adel-2025.pdf" target="_blank" class="text-info ms-3"
           ><button class="btn btn-outline-info">View</button></a
         >
         <a
-          href="/Ahmed-cv-2025.pdf"
-          download="/Ahmed-cv-2025.pdf"
+          href="/Ahmed-Adel-2025.pdf"
+          download="/Ahmed-Adel-2025.pdf"
           class="text-info ms-3"
           ><button class="btn btn-outline-info">Download</button></a
         >
