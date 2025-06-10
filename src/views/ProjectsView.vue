@@ -58,8 +58,8 @@ const projects = ref([
     description:
       "Pixel-perfect UI clone with animations and responsive layout showcasing advanced component-based design.",
     tech: ["Vue 3", "Bootstrap 5"],
-    github: "https://github.com/a7mdadel/Tiger-Bite.git",
-    live: "https://superb-daifuku-dff2d9.netlify.app",
+    github: "https://github.com/a7mdadel/Tiger-Bite",
+    live: "https://silly-lebkuchen-29dc6c.netlify.app/",
   },
   {
     title: "todo-app",
