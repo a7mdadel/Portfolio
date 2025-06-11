@@ -1,6 +1,6 @@
 <template>
   <div class="section container py-5 px-5 text-light">
-    <h2 class="my-5 text-info" data-aos="fade-left">Contact Me</h2>
+    <h2 class="my-5 text-info" data-aos="fade-right">Contact Me</h2>
     <div
       data-aos="zoom-in"
       data-aos-duration="2000"

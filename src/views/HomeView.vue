@@ -85,6 +85,7 @@ onMounted(() => {
 <style scoped>
 section {
   background-image: linear-gradient(to right, #000 40%, #69ccdaab);
+  overflow: hidden;
 }
 .typed-text {
   font-family: Sansita Swashed;

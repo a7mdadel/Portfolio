@@ -1,4 +1,3 @@
-// App.vue
 <template>
   <nav
     class="navbar navbar-dark bg-dark navbar-expand-md fixed-top py-1"
@@ -52,11 +51,9 @@ import { Collapse } from "bootstrap";
 onMounted(() => {
   const navbar = document.querySelector(".navbar-collapse");
   const toggler = document.querySelector(".navbar-toggler");
-
   document.addEventListener("click", function (event) {
     const isClickInsideNavbar =
       navbar.contains(event.target) || toggler.contains(event.target);
-
     if (!isClickInsideNavbar && navbar.classList.contains("show")) {
       new Collapse(navbar).hide();
     }
