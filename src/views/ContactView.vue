@@ -1,18 +1,28 @@
 <template>
   <div class="section container py-5 px-5 text-light">
-    <h2 class="mb-4 text-info" data-aos="fade-up">Contact Me</h2>
-
-    <!-- Alert Message -->
-    <div v-if="alertMessage" :class="['alert', alertType]" role="alert">
+    <h2 class="my-5 text-info" data-aos="fade-left">Contact Me</h2>
+    <div
+      data-aos="zoom-in"
+      data-aos-duration="2000"
+      v-if="alertMessage"
+      :class="['alert', alertType]"
+      role="alert"
+    >
       {{ alertMessage }}
     </div>
-
-    <form @submit.prevent="sendEmail" class="p-4 rounded border">
+    <form
+      ref="contactForm"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+      @submit.prevent="sendEmail"
+      class="p-4 rounded border"
+    >
       <div class="mb-3">
         <label for="name" class="form-label">Name</label>
         <input
           v-model="form.name"
           type="text"
+          name="user_name"
           class="form-control"
           id="name"
           placeholder="Your Name"
@@ -24,6 +34,7 @@
         <input
           v-model="form.email"
           type="email"
+          name="user_email"
           class="form-control"
           id="email"
           placeholder="you@example.com"
@@ -34,6 +45,7 @@
         <label for="message" class="form-label">Message</label>
         <textarea
           v-model="form.message"
+          name="message"
           class="form-control"
           id="message"
           rows="4"
@@ -45,8 +57,7 @@
         {{ loading ? "Sending..." : "Send" }}
       </button>
     </form>
-
-    <div class="mt-4 fs-4">
+    <div class="mt-4 fs-4" data-aos="fade-up" data-aos-duration="3000">
       <h5 class="mb-4 mt-5 fs-2 text-info">Or contact me directly:</h5>
       <p>
         <i class="fa-solid fa-phone"></i> :
@@ -107,11 +118,9 @@ const alertType = ref("");
 const sendEmail = async () => {
   loading.value = true;
   alertMessage.value = "";
-
   const serviceID = "service_0msayig";
   const templateID = "template_jflhlx7";
   const publicKey = "R_EQ5vud4Wrp0IZpt";
-
   try {
     const res = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
       method: "POST",
@@ -129,7 +138,6 @@ const sendEmail = async () => {
         },
       }),
     });
-
     if (res.ok) {
       alertMessage.value = "✅ Message sent successfully!";
       alertType.value = "alert-success";

@@ -1,16 +1,21 @@
 // views/HomeView.vue
 <template>
-  <section class="min-vh-100 bg-dark text-light d-flex align-items-center">
+  <section
+    data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000"
+    class="min-vh-100 bg-dark text-light d-flex align-items-center"
+  >
     <div class="container py-5 mt-5">
       <div
         class="row align-items-center d-flex flex-column-reverse flex-md-row"
       >
         <div class="col-md-6 text-center text-md-start" data-aos="fade-right">
-          <h1 class="display-2 fw-bold">
+          <h1 class="display-3 fw-bold">
             Hi, <br />
             I'm <span class="text-info">Ahmed El bahy</span>
           </h1>
-          <p class="lead my-4 fs-3">
+          <p class="lead my-4 fs-4">
             Frontend developer using Vue 3 and Bootstrap to create responsive
             and user-friendly websites and apps.
           </p>
@@ -30,24 +35,27 @@
           />
         </div>
       </div>
-
-      <div class="mt-5" data-aos="fade-up">
-        <h2 class="text-info mb-5">My Skills</h2>
-        <div
-          class="d-flex align-items-center justify-content-center flex-wrap gap-2"
-        >
-          <span class="badge">VUE 3</span>
-          <span class="badge">Composition API</span>
-          <span class="badge">Option API</span>
-          <span class="badge">Vue Router</span>
-          <span class="badge">Pinia</span>
-          <span class="badge">Vuex</span>
-          <span class="badge">JavaScript</span>
-          <span class="badge">Bootstrap 5</span>
-          <span class="badge"> HTML & HTML5</span>
-          <span class="badge">CSS & CSS3</span>
-          <span class="badge">Git & GitHub</span>
-          <span class="badge">Responsive Design</span>
+      <div
+        class="mt-5"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="3000"
+      >
+        <h2 class="text-center fw-bold mb-4">My Skills</h2>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <span class="skill-badge">HTML5</span>
+          <span class="skill-badge">CSS3</span>
+          <span class="skill-badge">JavaScript</span>
+          <span class="skill-badge">Bootstrap 5</span>
+          <span class="skill-badge">Vue 3</span>
+          <span class="skill-badge">Options API</span>
+          <span class="skill-badge">Composition API</span>
+          <span class="skill-badge">Vue Router</span>
+          <span class="skill-badge">Vuex</span>
+          <span class="skill-badge">Pinia</span>
+          <span class="skill-badge">REST APIs</span>
+          <span class="skill-badge">Git & GitHub</span>
+          <span class="skill-badge">Responsive Design</span>
         </div>
       </div>
     </div>
@@ -61,7 +69,7 @@ import AOS from "aos";
 
 onMounted(() => {
   const options = {
-    strings: ["Frontend Developer", "Vue.js specialist"],
+    strings: ["Frontend Developer", "'Vue.js' specialist"],
     typeSpeed: 50,
     backSpeed: 30,
     loop: true,
@@ -101,5 +109,27 @@ section {
 }
 .badge:not(:last-child) {
   margin-right: 1rem;
+}
+.text-gradient {
+  background: linear-gradient(to right, #0dcaf0, #6f42c1);
+  -webkit--background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skill-badge {
+  background: #ffffff;
+  color: #000000;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+  background: #0eeff0;
+  color: #000;
+  transform: scale(1.05);
 }
 </style>

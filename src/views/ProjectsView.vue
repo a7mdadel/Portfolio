@@ -1,7 +1,7 @@
 // views/ProjectsView.vue
 <template>
   <div class="section container py-5 px-5 text-light">
-    <h2 class="mb-4 text-info" data-aos="fade-right">My Projects</h2>
+    <h2 class="my-5 text-info" data-aos="fade-right">My Projects</h2>
     <div class="row">
       <div
         class="mb-4"
@@ -9,32 +9,34 @@
         :key="project.title"
         data-aos="zoom-in"
       >
-        <div class="card text-black h-100">
-          <div class="card-body">
-            <h5 class="card-title fs-2">{{ project.title }}</h5>
-            <p class="card-text fs-5 text-dark-50">
-              {{ project.description }}
-            </p>
-            <div class="mb-4 d-flex flex-wrap justify-content-center gap-3">
-              <span
-                class="text-dark p-1 fs-5 me-2"
-                v-for="t in project.tech"
-                :key="t"
-                >({{ t }})</span
+        <div data-aos="fade-up" data-aos-duration="3000">
+          <div class="card text-black h-100">
+            <div class="card-body">
+              <h5 class="card-title fs-2">{{ project.title }}</h5>
+              <p class="card-text fs-5 text-dark-50">
+                {{ project.description }}
+              </p>
+              <div class="mb-4 d-flex flex-wrap justify-content-center gap-3">
+                <span
+                  class="text-dark p-1 fs-5 me-2"
+                  v-for="t in project.tech"
+                  :key="t"
+                  >({{ t }})</span
+                >
+              </div>
+              <a
+                :href="project.live"
+                class="btn btn-outline-info btn-sm me-2 fs-4"
+                target="_blank"
+                >Live</a
+              >
+              <a
+                :href="project.github"
+                class="btn btn-outline-info btn-sm fs-4"
+                target="_blank"
+                >GitHub</a
               >
             </div>
-            <a
-              :href="project.live"
-              class="btn btn-outline-info btn-sm me-2 fs-4"
-              target="_blank"
-              >Live</a
-            >
-            <a
-              :href="project.github"
-              class="btn btn-outline-info btn-sm fs-4"
-              target="_blank"
-              >GitHub</a
-            >
           </div>
         </div>
       </div>

@@ -1,6 +1,10 @@
 // App.vue
 <template>
-  <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top py-1">
+  <nav
+    class="navbar navbar-dark bg-dark navbar-expand-md fixed-top py-1"
+    data-aos="fade-up"
+    data-aos-duration="2000"
+  >
     <div class="container">
       <router-link class="navbar-brand fs-4" to="/">
         <i class="fa-solid fa-user-tie"></i> My Portfolio</router-link
@@ -41,7 +45,32 @@
   <router-view />
 </template>
 
-<script setup></script>
+<script setup>
+import { onMounted } from "vue";
+import { Collapse } from "bootstrap";
+
+onMounted(() => {
+  const navbar = document.querySelector(".navbar-collapse");
+  const toggler = document.querySelector(".navbar-toggler");
+
+  document.addEventListener("click", function (event) {
+    const isClickInsideNavbar =
+      navbar.contains(event.target) || toggler.contains(event.target);
+
+    if (!isClickInsideNavbar && navbar.classList.contains("show")) {
+      new Collapse(navbar).hide();
+    }
+  });
+  const navLinks = document.querySelectorAll(".navbar-collapse .nav-link");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (navbar.classList.contains("show")) {
+        new Collapse(navbar).hide();
+      }
+    });
+  });
+});
+</script>
 
 <style>
 #app {
