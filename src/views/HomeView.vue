@@ -28,9 +28,9 @@
         </div>
         <div class="col-md-6 text-center" data-aos="zoom-in">
           <img
-            src="../assets/profile.png"
+            src="../assets/portfolio.png"
             alt="Profile"
-            class="rounded-circle shadow-lg mb-5"
+            class="img-fluid rounded-circle mb-5"
             style="max-width: 300px"
           />
         </div>
@@ -78,7 +78,6 @@ onMounted(() => {
 
   new Typed(".typed-text", options);
 
-  // AOS Animation
   AOS.init();
 });
 </script>
