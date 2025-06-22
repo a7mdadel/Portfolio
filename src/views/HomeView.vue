@@ -26,7 +26,7 @@
             >View Projects</router-link
           >
           <a
-            href="/Ahmed-Adel-2025.pdf"
+            href="/Ahmed-Adel-2025-.pdf"
             target="_blank"
             class="btn btn-outline text-info ms-1 fs-6"
             ><button class="btn btn-outline-info">View CV</button></a
