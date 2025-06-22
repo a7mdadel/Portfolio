@@ -22,8 +22,14 @@
           <p class="lead">
             <span class="typed-text text-warning fs-3"></span>
           </p>
-          <router-link to="/projects" class="btn btn-outline-info my-4 fs-3"
-            >View My Projects</router-link
+          <router-link to="/projects" class="btn btn-outline-info my-4 fs-6"
+            >View Projects</router-link
+          >
+          <a
+            href="/Ahmed-Adel-2025.pdf"
+            target="_blank"
+            class="btn btn-outline text-info ms-1 fs-6"
+            ><button class="btn btn-outline-info">View CV</button></a
           >
         </div>
         <div class="col-md-6 text-center" data-aos="zoom-in">

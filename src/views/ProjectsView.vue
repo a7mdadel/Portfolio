@@ -4,7 +4,7 @@
     <h2 class="my-5 text-info" data-aos="fade-right">My Projects</h2>
     <div class="row">
       <div
-        class="mb-4"
+        class="mb-4 col-md-6 d-flex justify-content-center"
         v-for="project in projects"
         :key="project.title"
         data-aos="zoom-in"
@@ -62,6 +62,14 @@ const projects = ref([
     tech: ["Vue 3", "Bootstrap 5"],
     github: "https://github.com/a7mdadel/Tiger-Bite",
     live: "https://silly-lebkuchen-29dc6c.netlify.app/",
+  },
+  {
+    title: "Store-Lite",
+    description:
+      "Lightweight e-commerce frontend with dynamic cart, favorites, and responsive design using Vue 3, Bootstrap 5 and Vuex.",
+    tech: ["Vue 3", "Bootstrap 5", "Vuex"],
+    github: "https://github.com/a7mdadel/StoreLite.git",
+    live: "https://storelite.netlify.app/",
   },
   {
     title: "todo-app",
