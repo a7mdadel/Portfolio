@@ -1,4 +1,3 @@
-// views/ProjectsView.vue
 <template>
   <div class="section container py-5 px-5 text-light">
     <h2 class="my-5 text-info" data-aos="fade-right">My Projects</h2>
