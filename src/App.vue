@@ -74,14 +74,14 @@ onMounted(() => {
 });
 </script>
 
-<style scoped>
+<style>
 #app {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #ffffff;
-  margin-top: 60px;
+  /* margin-top: 60px;/ */
 }
 .navbar-brand {
   color: #00eeff !important;
